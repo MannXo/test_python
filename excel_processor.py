@@ -1,3 +1,6 @@
+"""
+This is the main excel processor file.
+"""
 # ## features:
 
 #     1- process excel files. (input/output)
@@ -83,4 +86,3 @@ bar_chart.set_categories(categories)
 sheet.add_chart(bar_chart, "B20")
 
 workbook.save("report_category_per_gender_20220406.xlsx")
-

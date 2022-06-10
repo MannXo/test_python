@@ -11,3 +11,5 @@
 1- `flake8 .`
 
 2- `pylint .`
+
+3- `isort .`

@@ -16,12 +16,13 @@ This is the main excel processor file.
 #     6*- RFM for customer conversion
 
 #     6- most profitable customer types
-
 #     7- most bought categories normal customer
+
 import pandas as pd
+
 from openpyxl import load_workbook
-from openpyxl.workbook import Workbook
 from openpyxl.chart import BarChart, Reference
+from openpyxl.workbook import Workbook
 
 
 def read_process_xl(filename: str) -> pd.DataFrame:

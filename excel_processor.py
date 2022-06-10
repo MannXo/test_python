@@ -28,7 +28,7 @@ def read_process_xl(filename: str) -> pd.DataFrame:
 
 
 def write_xl(data: pd.DataFrame) -> None:
-    data.to_excel("output\report_category_per_gender_20220406.xlsx",
+    data.to_excel(r"output\\report_category_per_gender_20220406.xlsx",
                   sheet_name="Report", startrow=4)
 
 
@@ -58,11 +58,11 @@ def most_bought_categories_normal_customer(data):
     pass
 
 
-df: pd.DataFrame = read_process_xl('resources\supermarket_sales.xlsx')
+df: pd.DataFrame = read_process_xl(r'resources\\supermarket_sales.xlsx')
 report: pd.DataFrame = analyze_category_per_gender(df)
 write_xl(report)
 
-workbook: Workbook = load_workbook("output\report_category_per_gender_20220406.xlsx")
+workbook: Workbook = load_workbook(r"output\\report_category_per_gender_20220406.xlsx")
 sheet = workbook["Report"]
 
 min_col = workbook.active.min_column

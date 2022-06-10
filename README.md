@@ -1,3 +1,5 @@
 # excel reporting project
 
-# test line
+# how to run
+
+1- create venv: `python -m venv venv`
